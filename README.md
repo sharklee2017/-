@@ -10,27 +10,27 @@
 -----------------------------------------------------------------------------
 复习了集合部分的知识。
 Collection
-        |--List    有序,可重复
-            |--ArrayList
+        List    有序,可重复
+            ArrayList
                 底层数据结构是数组，查询快，增删慢。
                 线程不安全，效率高
-            |--Vector
+            Vector
                 底层数据结构是数组，查询快，增删慢。
                 线程安全，效率低
-            |--LinkedList
+            LinkedList
                 底层数据结构是链表，查询慢，增删快。
                 线程不安全，效率高
-        |--Set    无序,唯一
-            |--HashSet
+        Set    无序,唯一
+            HashSet
                 底层数据结构是哈希表。
                 如何保证元素唯一性的呢?
                     依赖两个方法：hashCode()和equals()
                     开发中自动生成这两个方法即可
-                |--LinkedHashSet（输入顺序和输出顺序一样，只是去重复了，因为底层链表）
+                LinkedHashSet（输入顺序和输出顺序一样，只是去重复了，因为底层链表）
                     底层数据结构是链表和哈希表
                     由链表保证元素有序
                     由哈希表保证元素唯一
-            |--TreeSet
+            TreeSet
                 底层数据结构是红黑树。
                 如何保证元素排序的呢?
                     自然排序
@@ -47,4 +47,6 @@ Arrays.binarySearch(a[]);a此时为已排序的数组，不然返回的值是错
         String.valueOf(number):int-String
         Integer.toSting(number):int-String
         Integer.parseInt(str):String-Int
-        Integer.valueOf(str):String-Int
+        Integer.valueOf(str):String-Int
+学习单例模式，饿汉式、懒汉式。
+        单例模式思想：保证类在内存中只有一个对象。开发常用饿汉式。懒汉式会出现线程安全问题。
