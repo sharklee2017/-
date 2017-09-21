@@ -12,7 +12,7 @@
 
 复习了集合部分的知识。<br> 
 ## Collection<br> <br> 
-## List  有序,可重复                                                                     <br> 
+# List  有序,可重复                                                                     <br> 
     ArrayList 
        底层数据结构是数组，查询快，增删慢。
        线程不安全，效率高 
