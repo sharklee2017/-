@@ -54,7 +54,7 @@ List<String> listWithoutDup = new ArrayList<String>(new LinkedHashSet<String>(li
  1. 调用子类的构造方法，默认情况下，会先调用父类的无参构造，即super();有参构造，需要自己添加，如果父类的有参构造，子类也是有参构造，传递进来，需要<br> 使用super(参数)；<br> 
    
 2. Arrays.binarySearch(a[]);a此时为已排序的数组，不然返回的值是错误的。<br> 
- ```
+ ```java
  String.valueOf(number):int-String
  Integer.toSting(number):int-String
  Integer.parseInt(str):String-Int
@@ -68,6 +68,7 @@ List<String> listWithoutDup = new ArrayList<String>(new LinkedHashSet<String>(li
 #### 工具类的易忘点
 1. ArrayList 的  E     remove（int index）返回index移除的元素<br> 
                boolean remove(object o)   返回移除成功与否（传递进来的是对象，不是元素，可以new出来的对象）<br> 
-```               
+``` java            
 2. Arrays.fill(dp[],Integer.MAX_VALUE);
 ```
+#### 正则表达式总结
