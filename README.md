@@ -30,8 +30,8 @@
        依赖两个方法：hashCode()和equals()
        开发中自动生成这两个方法即可
     2. LinkedHashSet（输入顺序和输出顺序一样，只是去重复了，因为底层链表）
-        底层数据结构是链表和哈希表 
-        由链表保证元素有序 由哈希表保证元素唯一 
+       底层数据结构是链表和哈希表 
+       由链表保证元素有序 由哈希表保证元素唯一 
         
 ## TreeSet                                                                                                              <br> 
    1. 底层数据结构是红黑树。 
@@ -54,7 +54,7 @@ List<String> listWithoutDup = new ArrayList<String>(new LinkedHashSet<String>(li
     有参构造，传递进来，需要使用super(参数)；
    
    2. Arrays.binarySearch(a[]);a此时为已排序的数组，不然返回的值是错误的。
-        ```java
+        ```
         String.valueOf(number):int-String
         Integer.toSting(number):int-String
         Integer.parseInt(str):String-Int
