@@ -75,4 +75,6 @@ List<String> listWithoutDup = new ArrayList<String>(new LinkedHashSet<String>(li
    insert(index,char);
 ```
 3.如果想要删除字符串中的指定某个字符，可以用substring(start,end)+substring(start,end);去除掉想要删除的字符。
+  或者转换成StringBulider，使用方法setCharAt（index，'char'）;
 #### 正则表达式总结
+     新建了文件
