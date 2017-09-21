@@ -57,8 +57,8 @@ List<String> listWithoutDup = new ArrayList<String>(new LinkedHashSet<String>(li
  ```java
  String.valueOf(number):int-String
  Integer.toSting(number):int-String
- Integer.parseInt(str):String-Int
- Integer.valueOf(str):String-Int 
+ Integer.parseInt(str):String-int
+ Integer.valueOf(str):String-int 
  ```
 ### 学习单例模式，饿汉式、懒汉式。<br> 
         单例模式思想：保证类在内存中只有一个对象。开发常用饿汉式。懒汉式会出现线程安全问题。
@@ -69,6 +69,10 @@ List<String> listWithoutDup = new ArrayList<String>(new LinkedHashSet<String>(li
 1. ArrayList 的  E     remove（int index）返回index移除的元素<br> 
                boolean remove(object o)   返回移除成功与否（传递进来的是对象，不是元素，可以new出来的对象）<br> 
 ``` java            
-2. Arrays.fill(dp[],Integer.MAX_VALUE);
+2. Arrays.fill(dp[],Integer.MAX_VALUE);//填充数组为最大值
+   String.tirm();//去除两端空格
+   //StringBuilder insert
+   insert(index,char);
 ```
+3.如果想要删除字符串中的指定某个字符，可以用substring(start,end)+substring(start,end);去除掉想要删除的字符。
 #### 正则表达式总结
