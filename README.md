@@ -34,14 +34,14 @@
         由链表保证元素有序 由哈希表保证元素唯一 
         
 ## TreeSet                                                                                                              <br> 
-   底层数据结构是红黑树。 
-                如何保证元素排序的呢? 
-                    自然排序
-                    比较器排序 
-                如何保证元素唯一性的呢? 
-                    根据比较的返回值是否是0来决定
-                复习过程发现LinkedHashSet底层为链表结构，输入输出顺序一致。那之前遇到的输入去重复且输入相对位置不变就有了下面的解决办法：
-                元素添加到list，然后用linkedhashset去重复，在转换为arraylist。<br> 
+    底层数据结构是红黑树。 
+       如何保证元素排序的呢? 
+           自然排序
+           比较器排序 
+    如何保证元素唯一性的呢? 
+        根据比较的返回值是否是0来决定
+    复习过程发现LinkedHashSet底层为链表结构，输入输出顺序一致。那之前遇到的输入去重复且输入相对位置不变就有了下面的解决办法：
+    元素添加到list，然后用linkedhashset去重复，在转换为arraylist。<br> 
  ```java
 List<String> listWithoutDup = new ArrayList<String>(new LinkedHashSet<String>(list));
 ```
