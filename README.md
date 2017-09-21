@@ -24,7 +24,7 @@
        线程不安全，效率高
       
 ## Set   无序,唯一                                                                                             <br> 
-###HashSet
+    HashSet
        底层数据结构是哈希表。
        如何保证元素唯一性的呢?
        依赖两个方法：hashCode()和equals()
@@ -52,14 +52,13 @@ List<String> listWithoutDup = new ArrayList<String>(new LinkedHashSet<String>(li
 ## 复习构造方法的混淆点:<br>
     调用子类的构造方法，默认情况下，会先调用父类的无参构造，即super();有参构造，需要自己添加，如果父类的有参构造，子类也是
     有参构造，传递进来，需要使用super(参数)；
-    
+   
     Arrays.binarySearch(a[]);a此时为已排序的数组，不然返回的值是错误的。
         ```java
         String.valueOf(number):int-String
         Integer.toSting(number):int-String
         Integer.parseInt(str):String-Int
         Integer.valueOf(str):String-Int
-        
         ```
 ## 学习单例模式，饿汉式、懒汉式。<br> 
         单例模式思想：保证类在内存中只有一个对象。开发常用饿汉式。懒汉式会出现线程安全问题。
