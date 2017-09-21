@@ -54,11 +54,11 @@ List<String> listWithoutDup = new ArrayList<String>(new LinkedHashSet<String>(li
     有参构造，传递进来，需要使用super(参数)；
    
       2. Arrays.binarySearch(a[]);a此时为已排序的数组，不然返回的值是错误的。
-     ```
-     String.valueOf(number):int-String
-     Integer.toSting(number):int-String
-     Integer.parseInt(str):String-Int
-     Integer.valueOf(str):String-Int 
-     ```
+ ```
+ String.valueOf(number):int-String
+ Integer.toSting(number):int-String
+ Integer.parseInt(str):String-Int
+ Integer.valueOf(str):String-Int 
+ ```
 ### 学习单例模式，饿汉式、懒汉式。<br> 
         单例模式思想：保证类在内存中只有一个对象。开发常用饿汉式。懒汉式会出现线程安全问题。
