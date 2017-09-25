@@ -1,0 +1,50 @@
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        sc.nextLine();
+        int[] a=new int[n];
+        for (int i = 0; i < n; i++) {
+            a[i]=sc.nextInt();
+            sc.nextLine();
+        }
+        for (int i = 0; i < n; i++) {
+            if(Judge(a[i])) {
+                System.out.println("possible");
+            }
+            else{
+                System.out.println("impossible");
+            }
+
+        }
+    }
+    public static boolean Judge(int num){
+        if(num>=0&&num<10)return true;
+        String s= String.valueOf(num);
+        int count=0;
+        char[] b=s.toCharArray();
+        int temp=b[0]-'0';
+        Arrays.sort(b);
+        for (int i = 0; i < b.length; i++) {
+            if((b[i]-'0')>temp){
+                int nums=num*(b[i]-'0');
+                String s1= String.valueOf(nums);
+                char[] b1=s1.toCharArray();
+                Arrays.sort(b1);
+                for (int j = 0; j < b.length; j++) {
+                    if(b1[j]==b[j])
+                       count++;
+                }
+                if(count==b.length){
+                    return true;
+                }
+            }
+
+        }
+        return false;
+    }
+}
