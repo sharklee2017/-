@@ -78,3 +78,9 @@ List<String> listWithoutDup = new ArrayList<String>(new LinkedHashSet<String>(li
   或者转换成StringBulider，使用方法setCharAt（index，'char'）;
 #### 正则表达式总结
      新建了文件
+2017-09-26
+--------------------------------------------------------------------------------------
+###N皇后问题
+          递归和非递归<br> 
+###网络编程socket
+     
